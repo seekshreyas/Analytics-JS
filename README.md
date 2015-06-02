@@ -17,7 +17,8 @@ window.integration = {
    */
   makeRequest: function (experimentId, variationIds) {
     var slot = 2;
-    var keyValue = window.integrator.makeSendableNames(experimentId, variationIds, 255, 255, 255, false, "test");
+    var keyValue = window.integrator.makeSendableNames(experimentId, variationIds, 255, 
+    255, 255, false, "test");
 
     window["_gaq"].push(["_setCustomVar", slot, keyValue.key, keyValue.value, 2]);
   },
