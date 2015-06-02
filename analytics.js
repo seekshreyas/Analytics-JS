@@ -175,7 +175,6 @@ window.integrator = {
    * @return {Array.<string>}
    */
   getRelevantExperimentIds: function () {
-    var activeExperimentIds = window.optimizely.data.state.activeExperiments;
     var exps = optimizely.variationIdsMap || [];
     // Grab the variation id from the cookie if present
     var redirectVariationId = this.redirect.getRedirectVariationId();
